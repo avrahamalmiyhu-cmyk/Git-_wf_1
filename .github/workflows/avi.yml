@@ -27,6 +27,7 @@ jobs:
           echo  "owned by  : ${{env.OWNER }}"
           echo "gitub action: ${{ github.action }}"
           echo "Evnet : ${{ github.event_name }}"
+      
        - uses: actions/checkout@v3
     
        - run: ls -la 
@@ -50,7 +51,7 @@ jobs:
           echo "HI ! "
           echo "VAR-1 = ${{ env.VAR1 }}"
           echo "VAR-2 = ${{ env.VAR2 }}"
-          echo APP_NAME: ${{ env.APP_NAME}}, owned by ${{env.OWNER}}
+          echo APP_NAME: ${{ env.APP_NAME}} 
        - uses: actions/checkout@v3
     
        - run: ls -la  
