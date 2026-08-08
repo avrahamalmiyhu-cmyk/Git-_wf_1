@@ -11,7 +11,7 @@ on:
 
 
 jobs:
-  job-1: 
+  job-1:  
     runs-on: ubuntu-latest 
     steps:
        - name: say hello 
@@ -26,4 +26,21 @@ jobs:
        - uses: actions/checkout@v3
     
        - run: ls -la 
+    
+       - run: ls -la
+  job-2 :  
+    
+    runs-on: ubuntu-latest 
+    steps:
+       - name: say hello 
+         run: echo "hello world!!"
  
+       - name: multiline commad 
+         run: |
+          ls -la 
+          pwd 
+          echo "HI ! "
+          
+       - uses: actions/checkout@v3
+    
+       - run: ls -la  
