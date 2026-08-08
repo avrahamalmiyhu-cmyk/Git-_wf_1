@@ -22,7 +22,8 @@ jobs:
           ls -la 
           pwd 
           echo "HI ! "
+          
+       - uses: action/checkout@v3
     
-          - uses: action/checkout@v3
-    
-          run: ls -la 
+       - run: ls -la 
+ 
