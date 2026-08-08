@@ -52,6 +52,7 @@ jobs:
           echo "VAR-1 = ${{ env.VAR1 }}"
           echo "VAR-2 = ${{ env.VAR2 }}"
           echo APP_NAME: ${{ env.APP_NAME}} 
+          echo owned by: ${{ env.OWNER }}
        - uses: actions/checkout@v3
     
        - run: ls -la  
