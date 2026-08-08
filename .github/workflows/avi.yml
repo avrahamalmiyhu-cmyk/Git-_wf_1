@@ -1,1 +1,27 @@
+name: work with environments 
+
+on: 
+   push:
+   branches:
+   - main 
+   - master 
+
+
+   workfolw_dispatch: 
+
+
+jobs:
+ job-1: 
+  runs-on: ubuntu-latest 
+   steps: 
+    - name: say hello 
+     run: echo "hello world!!"
+ 
+     - name: multiline commad 
+     run: 
+      ls -la 
+      pwd 
+      echo "HI ! "
+  
+    
 
